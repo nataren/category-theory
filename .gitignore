@@ -18,3 +18,7 @@ Cargo.lock
 /target/
 **/*.rs.bk
 Cargo.lock
+
+# Avoid Emacs generated files
+*~
+*.#*
