@@ -1,9 +1,11 @@
 // Challenge solutions
 mod category_theory {
+    #[allow(dead_code)]
     pub fn id<T>(a: T) -> T {
         return a
     }
 
+    #[allow(dead_code)]
     pub fn comp<A, B, C, F: 'static, G: 'static>(f: F, g: G) -> Box<Fn(A) -> C>
         where F: Fn(A) -> B, G: Fn(B) -> C {
         Box::new(move |a| g(f(a)))
